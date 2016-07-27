@@ -8,3 +8,8 @@ h1 {
   justify-content: center;
   width: 30%;
 }
+
+h4 {
+  font-variant: small-caps;
+  font-weight: bold;
+}

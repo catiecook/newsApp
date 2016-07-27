@@ -12,7 +12,7 @@ var url = "https://api.nytimes.com/svc/search/v2/articlesearch.json";
 url += '?' + $.param({
   'api-key': "0d88ce861d024b2f91a5d00184961d50",
   'q': $query,
-  'fl': "snippet"
+  'fl': "headline,snippet,news_desk,web_url"
 });
 $.ajax({
   url: url,
@@ -21,10 +21,20 @@ $.ajax({
   console.log(result);
 
   var randomNum = Math.floor(Math.random()*10)
-  var $article = $("<p>");
-  $article = $article.text(result.response.docs[randomNum].snippet);
+  var $headline = $("<p>");
+  var $snippet = $("<p>");
+  var $news_desk = $("<p>");
+  var $url = $("<p>");
 
-  $("#contentLoad").append($article);
+  $headline = $headline.text(result.response.docs[randomNum].headline.main);
+  $snippet= $snippet.text(result.response.docs[randomNum].headline.main.snippet);
+  // $news_desk = $news_desk.text(result.response.docs[randomNum].headline.main.lead_paragraph.news_desk);
+  // $url = (result.response.docs[randomNum].headline.main.lead_paragraph.news_desk.web_url);
+
+
+  $("#headlineLoad").append($headline);
+  $("#snippet").append($snippet);
+  // $("#blank").attr("src", $url.attr("href"));
 
 }).fail(function(err) {
   throw err;
