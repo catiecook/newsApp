@@ -1,0 +1,206 @@
+body {
+  background: url(bokeh_thong_vo.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-weight: 400;
+}
+
+#page {
+  background-color: #EAEBED;
+  /*position: relative;*/
+  display: flex;
+  /*justify-content: center;*/
+  font-size: 1em;
+  width: 75vw;
+  height: 100vh;
+  margin-top: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+#header {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 70vw;
+  height: 10vh;
+}
+
+#header span {
+  background-color: #EAEBED;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  width: auto;
+  padding: 1vh 2vw;
+  z-index: 200;
+}
+
+
+.searchContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70vw;
+  height: auto;
+  /*border-style: double;*/
+  margin: 5vh 3vw;
+  padding: 0;
+}
+
+#articleLoad {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 70vw;
+  height: auto;
+  overflow: scroll;
+  margin: 2vh 2vw;
+}
+
+h1 {
+    background-color: #EAEBED;
+    padding: 1vw;
+}
+
+input {
+  margin: 15vh 3vw 0 0;
+  padding: 1vw;
+  min-width: 20px;
+  width: 30vw;
+}
+
+ button {
+   padding: .8vw;
+   background-color: darkgrey;
+   border-radius: 1em;
+ }
+
+
+
+
+
+
+/*Putting in some breakpoints for screen sizes*/
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6 ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+}
+
+/* ----------- iPhone 6+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+
+}
+
+/* Portrait */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+}
